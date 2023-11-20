@@ -1,54 +1,71 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Adicionar Usuário</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@700&family=Poppins:wght@400;700&family=Work+Sans:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <script src="users.js"></script>
-  </head>
-  <body>
-    <div class="container-2">
-      <h1>Adicionar Usuário</h1>
 
-      <div>
-        <div class="user-form">
-          <label for="nome">Nome:</label>
-          <input type="text" id="nome" placeholder="Digite o nome" />
-        </div>
+<head>
+  <script src="https://kit.fontawesome.com/76aba72a03.js"></script>
+  <meta charset="utf-8" />
+  <title>Adicionar Usuário</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@700&family=Poppins:wght@400;700&family=Work+Sans:wght@400;700&display=swap"
+    rel="stylesheet" />
+</head>
 
-        <div class="user-form">
-          <label for="email">E-mail:</label>
-          <input type="email" id="email" placeholder="Digite o e-mail" />
-        </div>
-
-        <button class="btnAdicionar" id="btnAdicionar">Adicionar</button>
+<body>
+  <nav class="menu">
+    <ul>
+        <li><a href="/home/index.html">Home</a></li>
+        <li><a href="/products/products.html">Produtos</a></li>
+    </ul>
+</nav>
+  <div class="container-2">
+    <h1>Adicionar Usuário</h1>
+    <div>
+      <div class="user-form">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" placeholder="Digite o nome" />
       </div>
 
-     
-      <h2>Lista de Usuários</h2>
-      
-      <div class="listaUsers">
-        <ul>
-          <li>
-            <div class="input-container">
-              <input type="text" value="Nome do Usuário" readonly />
-              <img src="./img/lixeira.png" alt="Remover" class="delete-icon" />
-            </div>
-          </li>
+      <div class="user-form">
+        <label for="sobrenome">Sobrenome:</label>
+        <input type="text" id="sobrenome" placeholder="Digite o sobrenome" />
+      </div>
 
+      <div class="user-form">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" placeholder="Digite o e-mail" />
+      </div>
+
+      <div class="user-form">
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" placeholder="Digite a idade" />
+      </div>
+
+      <div class="user-form">
+        <label for="foto">Foto:</label>
+        <input type="file" id="foto" />
+      </div>
+
+      <button class="btnAdicionar" id="btnAdicionar" type="submit">Adicionar</button>
+    </div>
+    <h2>Lista de Usuários</h2>
+    <ul class="grid-container" id="user-list"></ul>
+
+    <div class="listaUsers">
+      <ul>
+        <li>
           <div class="input-container">
             <input type="text" value="Nome do Usuário" readonly />
-            <img src="./img/lixeira.png" alt="Remover" class="delete-icon" />
+            <i class="fa-solid fa-trash" alt="Remover" class="delete-icon"></i>
           </div>
-        </ul>
-      </div>
+        </li>
+      </ul>
     </div>
-  </body>
+  </div>
+
+  <script src="users.js"></script>
+</body>
+
 </html>

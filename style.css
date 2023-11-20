@@ -113,32 +113,69 @@ h2 {
 
 
 
-
-
 .input-container {
-    position: relative;
-    display: flex;
-    align-items: center; /* Centraliza verticalmente os elementos dentro do contêiner */
+  position: relative;
+  display: flex;
+  align-items: center; /* Centraliza verticalmente os elementos dentro do contêiner */
 }
 
 .input-container input {
-    flex: 1; /* Ocupa o espaço restante dentro do contêiner */
-    padding-right: 30px; /* Ajuste conforme necessário para dar espaço ao ícone */
+  flex: 1; /* Ocupa o espaço restante dentro do contêiner */
+  padding-right: 30px; /* Ajuste conforme necessário para dar espaço ao ícone */
 }
 
-.input-container img.delete-icon {
-    position: absolute;
-    right: 5px; /* Ajuste conforme necessário para posicionar o ícone */
-    top: 50%;
-    transform: translateY(-50%);
-    width: 20px; /* Ajuste o tamanho conforme necessário */
-    height: 20px;
-    cursor: pointer;
+.input-container .fa-trash {
+  position: absolute;
+  right: 5px; /* Ajuste conforme necessário para posicionar o ícone */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px; /* Ajuste o tamanho conforme necessário */
+  height: 20px;
+  cursor: pointer;
 }
 
 
 
+.li {
+  background-color: #fff;
+ padding: 20px;
+ border-radius: 8px;
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ display: flex;
+ flex-wrap: wrap;
+ flex-direction: column;
+ align-content: space-around;
+ justify-content: space-between;
+}
 
 
+
+#user-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#user-list li {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  width: calc(50% - 40px);
+  box-sizing: border-box;
+}
+
+#user-list img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#user-list {
+  list-style-type: none;
+}
 
 
