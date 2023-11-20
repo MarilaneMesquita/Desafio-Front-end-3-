@@ -1,0 +1,144 @@
+:root {
+  --primary-font: "Poppins", "sans-serif";
+  --border-color: #ccc;
+  --box-shadow-color: rgba(0, 0, 0, 0.1);
+  --link-color: #3498db;
+  --link-hover-color: #2980b9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "sans-serif";
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container-1 {
+  border: 2px solid #ccc;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+
+a {
+  display: inline-block;
+  margin: 10px 0;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #3498db;
+  border: 2px solid #2980b9;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
+}
+
+a:hover {
+  background-color: #2980b9;
+  color: #fff;
+
+}
+
+.btnAdicionar {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #3498db;
+    border: 1px solid black;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+  
+  }
+  
+  .btnAdicionar:hover {
+    background-color: #2980b9;
+    color: #fff;
+  }
+  
+
+.container-2 {
+    display: flex;
+    flex-direction: column; 
+    border: 2px solid #ccc;
+    padding: 100px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra igual à do container-1 */
+    
+  }
+
+
+.user-form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 20px;
+    height: 50px;
+    width: auto;
+    
+}
+
+
+input {
+    height: 30px;
+}
+
+
+h2 {
+    margin-bottom: 15px;
+}
+
+/* Adicionando estilo específico para os ícones dentro dos inputs */
+.listaUsers li {
+    position: relative;
+    list-style: none;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center; /* Centraliza verticalmente os elementos dentro do contêiner */
+}
+
+.input-container input {
+    flex: 1; /* Ocupa o espaço restante dentro do contêiner */
+    padding-right: 30px; /* Ajuste conforme necessário para dar espaço ao ícone */
+}
+
+.input-container img.delete-icon {
+    position: absolute;
+    right: 5px; /* Ajuste conforme necessário para posicionar o ícone */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px; /* Ajuste o tamanho conforme necessário */
+    height: 20px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+

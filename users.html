@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Adicionar Usuário</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@700&family=Poppins:wght@400;700&family=Work+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="users.js"></script>
+  </head>
+  <body>
+    <div class="container-2">
+      <h1>Adicionar Usuário</h1>
+
+      <div>
+        <div class="user-form">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" placeholder="Digite o nome" />
+        </div>
+
+        <div class="user-form">
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" placeholder="Digite o e-mail" />
+        </div>
+
+        <button class="btnAdicionar" id="btnAdicionar">Adicionar</button>
+      </div>
+
+     
+      <h2>Lista de Usuários</h2>
+      
+      <div class="listaUsers">
+        <ul>
+          <li>
+            <div class="input-container">
+              <input type="text" value="Nome do Usuário" readonly />
+              <img src="./img/lixeira.png" alt="Remover" class="delete-icon" />
+            </div>
+          </li>
+
+          <div class="input-container">
+            <input type="text" value="Nome do Usuário" readonly />
+            <img src="./img/lixeira.png" alt="Remover" class="delete-icon" />
+          </div>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
