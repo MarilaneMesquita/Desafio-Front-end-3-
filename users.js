@@ -19,7 +19,7 @@ class User {
     fetch('https://jsonplaceholder.typicode.com/users')
       .then(response => response.json())
       .then(users => {
-        pageUsers = users.map(user => new User(user.id, user.name, user.username, user.email, user.phone));
+        pageUsers = users.map(user => new User(user.id, user.name, user.username, user.email));
         displayUsers();
       });
   }
@@ -76,7 +76,7 @@ class User {
       } else if (isNaN(idade.value)) {
         alert('Por favor, insira um número válido para a idade.');
         return;
-      } else if (idade.value <= 0 || idade.value > 110) {
+      } else if (parseInt(idade) <= 0 || parseInt(idade) > 110) {
         alert('Por favor, insira uma idade entre 1 a 110.');
         return;
       }
