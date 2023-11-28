@@ -16,62 +16,70 @@
       rel="stylesheet"
     />
   </head>
-  <body>
-    <nav class="menu">
-      <a href="index.html">Home</a>
-      <a href="users.html">Usuários</a>
-    </nav>
 
+  <body>
+    <header>
+      <nav class="menu">
+        <a href="index.html">Home</a>
+        <a href="users.html">Usuários</a>
+      </nav>
+    </header>
     <div class="container-2">
       <h1>Adicionar Produto</h1>
 
-      <div>
+      <div class="user-form-container">
         <div class="user-form">
           <label for="nome">Título:</label>
-          <input type="text" id="nome" placeholder="Digite o nome" />
+          <input type="text" id="title" placeholder="Digite o nome" />
         </div>
 
         <div class="user-form">
           <label for="descricao">Descrição:</label>
           <input
             type="textarea"
-            id="descricao"
+            id="description"
             placeholder="Digite a descrição"
           />
         </div>
 
         <div class="user-form">
           <label for="preco">Preço:</label>
-          <input type="number" id="preco" placeholder="Digite o preço" />
+          <input type="number" id="price" placeholder="Digite o preço" />
         </div>
 
         <div class="user-form">
           <label for="marca">Marca:</label>
-          <input type="text" id="marca" placeholder="Digite a marca" />
+          <input type="text" id="brand" placeholder="Digite a marca" />
         </div>
 
         <div class="user-form">
           <label for="categoria">Categoria:</label>
-          <input type="text" id="categoria" placeholder="Digite a categoria" />
+          <input type="text" id="category" placeholder="Digite a categoria" />
         </div>
 
         <div class="user-form">
           <label for="foto">Foto:</label>
-          <input type="file" id="foto" />
+          <input type="text" id="thumbnail" />
         </div>
 
         <button class="btnAdicionar" id="btnAdicionar">Adicionar</button>
       </div>
-
-      <h2>Remover Produto</h2>
-
       <div class="listaUsers">
-        <div class="input-container">
-          <input type="text" value="Remover Produtos existentes" readonly />
-          <i class="fa-solid fa-trash" alt="Remover" class="delete-icon"></i>
-        </div>
+        <h2>Lista de Produtos</h2>
+        <ul class="grid-container" id="product-list"></ul>
+        <div class="input-container"></div>
+      </div>
+
+      <div class="input-container">
+        <input
+          type="text"
+          id="inputProduto"
+          placeholder="Digite o produto"
+        />
+        <button onclick="removeProdutoByName()">Remover</button>
       </div>
     </div>
+
     <script src="products.js"></script>
   </body>
 </html>

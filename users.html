@@ -16,6 +16,7 @@
 <body>
   <main>
 
+    <header>
     <nav class="menu">
       
         <a href="index.html">Home</a>
@@ -23,13 +24,14 @@
         
       </nav>
   
-  
+    </header>
     <div class="container-2">
       <h1>Adicionar Usuário</h1>
-      <div>
+      <div class="user-form-container">
         <div class="user-form">
           <label for="nome">Nome:</label>
           <input type="text" id="nome" placeholder="Digite o nome" />
+
         </div>
   
         <div class="user-form">
@@ -49,7 +51,7 @@
   
         <div class="user-form">
           <label for="foto">Foto:</label>
-          <input type="file" id="foto" />
+          <input type="text" id="foto" />
         </div>
   
         <button class="btnAdicionar" id="btnAdicionar" type="submit">Adicionar</button>
@@ -61,19 +63,14 @@
       </div>
       <h2>Lista de Usuários</h2>
       <ul class="grid-container" id="user-list"></ul>
-  
-      <div class="listaUsers">
-        <ul>
-          <li>
-            <div class="input-container">
-              <input type="text" value="Nome do Usuário" readonly />
-              <i class="fa-solid fa-trash" alt="Remover" class="delete-icon"></i>
-            </div>
-          </li>
-        </ul>
+
+      <div class="input-container">
+        <input type="text" id="inputUsuario" placeholder="Digite o usuário" />
+  <button onclick="removeUserByName()">Remover</button>
+       
       </div>
-   
-  
+
+
     <script src="users.js"></script>
 
   </main>

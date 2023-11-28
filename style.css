@@ -19,7 +19,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
- 
+  background-color: #f2f1f1;
 }
 
 .menu {
@@ -50,6 +50,7 @@ body {
 .container-1 {
   border: 2px solid #ccc;
   padding: 20px;
+  margin: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -100,7 +101,9 @@ a:hover,
 .container-2 label {
   font-weight: 700;
 }
-
+.user-form-container {
+  min-width: 300px;
+}
 .user-form {
   display: flex;
   flex-direction: column;
@@ -110,8 +113,6 @@ a:hover,
   height: 50px;
   width: auto;
 }
-
-
 
 input {
   height: 30px;
@@ -127,6 +128,7 @@ input {
 
 .input-container {
   position: relative;
+  margin: 20px;
   display: flex;
   align-items: center;
 }
@@ -134,21 +136,10 @@ input {
 .input-container input {
   flex: 1;
   padding-right: 50px;
-
-}
-
-.input-container .fa-trash {
-  position: absolute;
-  right: 5px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 20px;
-  height: 20px;
-  cursor: pointer;
 }
 
 .li {
-  background-color: #fff;
+  background-color: #fffbfb;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -157,6 +148,7 @@ input {
   flex-direction: column;
   align-content: space-around;
   justify-content: space-between;
+  position: relative;
 }
 
 #user-list {
@@ -166,17 +158,39 @@ input {
 }
 
 #user-list li {
-  border: 1px solid #ccc;
+  border: 1px solid #3f0886;
   border-radius: 5px;
   margin: 10px;
   padding: 10px;
-  width: calc(50% - 40px);
+  width: calc(30% - 40px);
   box-sizing: border-box;
 }
 
-#user-list img {
-  max-width: 100%;
+#product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#product-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  border: 1px solid #ececec;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 20px;
+  width: calc(50% - 40px);
+  box-sizing: border-box;
+
+  
+}
+
+#product-list img {
+  max-width: 80%;
   height: auto;
+  padding: 20px;
 }
 
 ul {
@@ -185,7 +199,7 @@ ul {
 
 @media (max-width: 768px) {
   .container-2 {
-    padding: 10px; /* Ajuste para larguras menores */
+    padding: 10px;
   }
 }
 
@@ -193,11 +207,19 @@ ul {
   margin: 30px;
 }
 
-h2 { 
+h2 {
   font-size: 20px;
 }
 p {
   margin-bottom: 15px;
 }
 
+.image-container {
+  width: 100%;
+  height: 300px;
+}
 
+.image-container img {
+  min-width: 300px;
+ max-height: 100%;
+}
